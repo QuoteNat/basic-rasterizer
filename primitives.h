@@ -14,8 +14,8 @@ struct color {
  * @brief The Point struct represents a pixel on the screen using the x,y grid.
  */
 struct point {
-    int x;
-    int y;
+    double x;
+    double y;
 };
 
 #endif // PRIMITIVES_H

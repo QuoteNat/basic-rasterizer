@@ -21,6 +21,5 @@ HEADERS += \
     renderer.h
 
 
-
 unix: CONFIG += link_pkgconfig
 unix: PKGCONFIG += sdl2

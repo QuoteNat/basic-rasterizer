@@ -1,2 +1,2 @@
 # basic-rasterizer
-A simple implementation of rasterization using SDL2 and C++.
+A simple implementation of rasterization using X11 and C++.
