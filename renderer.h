@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include <math.h>
 #include <vector>
+#include <utility>
 #include "primitives.h"
 
 /**
@@ -39,4 +40,16 @@ void DrawLine(point P0, point P1, color drawColor, SDL_Renderer *renderer, int s
  * @param screenHeight The screen height
  */
 void DrawWireframeTriangle(point P0, point P1, point P2, color drawColor, SDL_Renderer *renderer, int screenWidth, int screenHeight);
+
+/**
+ * @brief DrawFilledTriangle Draw a filled triangle
+ * @param P0 Point 1
+ * @param P1 Point 2
+ * @param P2 Point 3
+ * @param drawColor Color
+ * @param renderer Renderer
+ * @param screenWidth Screen Width
+ * @param screenHeight Screen Height
+ */
+void DrawFilledTriangle(point P0, point P1, point P2, color drawColor, SDL_Renderer *renderer, int screenWidth, int screenHeight);
 #endif // RENDERER_H

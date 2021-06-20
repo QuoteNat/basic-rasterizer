@@ -27,6 +27,7 @@ int main()
     success = SDL_RenderClear(renderer);
     std::cout << success << std::endl;
 
+    DrawFilledTriangle({-200, -250}, {200, 50}, {20, 250}, {0, 255, 0}, renderer, SCREEN_WIDTH, SCREEN_HEIGHT);
     DrawWireframeTriangle({-200, -250}, {200, 50}, {20, 250}, {0, 0, 0}, renderer, SCREEN_WIDTH, SCREEN_HEIGHT);
 
     SDL_RenderPresent(renderer);
