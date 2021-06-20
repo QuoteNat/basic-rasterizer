@@ -28,4 +28,15 @@ void PutPixel(int x, int y, color drawColor, SDL_Renderer *renderer, int screenW
  */
 void DrawLine(point P0, point P1, color drawColor, SDL_Renderer *renderer, int screenWidth, int screenHeight);
 
+/**
+ * @brief DrawWireframeTriangle Draw a wireframe triangle
+ * @param P0 Point 1
+ * @param P1 Point 2
+ * @param P2 Point 3
+ * @param drawColor Color of the lines
+ * @param renderer The renderer
+ * @param screenWidth The screen width
+ * @param screenHeight The screen height
+ */
+void DrawWireframeTriangle(point P0, point P1, point P2, color drawColor, SDL_Renderer *renderer, int screenWidth, int screenHeight);
 #endif // RENDERER_H

@@ -57,3 +57,9 @@ void DrawLine(point P0, point P1, color drawColor, SDL_Renderer* renderer, int s
         }
     }
 }
+
+void DrawWireframeTriangle(point P0, point P1, point P2, color drawColor, SDL_Renderer *renderer, int screenWidth, int screenHeight) {
+    DrawLine(P0, P1, drawColor, renderer, screenWidth, screenHeight);
+    DrawLine(P1, P2, drawColor, renderer, screenWidth, screenHeight);
+    DrawLine(P2, P0, drawColor, renderer, screenWidth, screenHeight);
+}
